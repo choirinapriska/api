@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 app.set('port', process.env.PORT || 8080);
 
 // --- Route --
-app.use('/barang', require('./routes/barang'));
+// app.use('/barang', require('./routes/barang'));
 // app.use('/dapur', require('./routes/dapur'));
 // app.use('/departemen', require('./routes/departemen'));
 // app.use('/gudang', require('./routes/gudang'));
