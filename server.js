@@ -12,26 +12,26 @@ app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 })); 
-app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT || 8080);
 
 // --- Route --
 app.use('/barang', require('./routes/barang'));
-app.use('/dapur', require('./routes/dapur'));
-app.use('/departemen', require('./routes/departemen'));
-app.use('/gudang', require('./routes/gudang'));
-app.use('/kartu_stok', require('./routes/kartu_stok'));
-app.use('/kategori', require('./routes/kategori'));
-app.use('/pemakaian_barang', require('./routes/pemakaian_barang'));
-app.use('/pemakaian_barang_detail', require('./routes/pemakaian_barang_detail'));
-app.use('/penerimaan_barang', require('./routes/penerimaan_barang'));
-app.use('/penerimaan_barang_detail', require('./routes/penerimaan_barang_detail'));
-app.use('/permintaan', require('./routes/permintaan'));
-app.use('/permintaan_detail', require('./routes/permintaan_detail'));
-app.use('/pindah_gudang', require('./routes/pindah_gudang'));
-app.use('/pindah_gudang_detail', require('./routes/pindah_gudang_detail'));
-app.use('/purchase_order', require('./routes/purchase_order'));
-app.use('/purchase_order_detail', require('./routes/purchase_order_detail'));
-app.use('/supplier', require('./routes/supplier'));
+// app.use('/dapur', require('./routes/dapur'));
+// app.use('/departemen', require('./routes/departemen'));
+// app.use('/gudang', require('./routes/gudang'));
+// app.use('/kartu_stok', require('./routes/kartu_stok'));
+// app.use('/kategori', require('./routes/kategori'));
+// app.use('/pemakaian_barang', require('./routes/pemakaian_barang'));
+// app.use('/pemakaian_barang_detail', require('./routes/pemakaian_barang_detail'));
+// app.use('/penerimaan_barang', require('./routes/penerimaan_barang'));
+// app.use('/penerimaan_barang_detail', require('./routes/penerimaan_barang_detail'));
+// app.use('/permintaan', require('./routes/permintaan'));
+// app.use('/permintaan_detail', require('./routes/permintaan_detail'));
+// app.use('/pindah_gudang', require('./routes/pindah_gudang'));
+// app.use('/pindah_gudang_detail', require('./routes/pindah_gudang_detail'));
+// app.use('/purchase_order', require('./routes/purchase_order'));
+// app.use('/purchase_order_detail', require('./routes/purchase_order_detail'));
+// app.use('/supplier', require('./routes/supplier'));
 
 
 http.createServer(function ( req, res, next ) {
