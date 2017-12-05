@@ -15,6 +15,9 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 app.set('port', process.env.PORT || 8080);
 
 // --- Route --
+app.get('/', function (req, res) {
+    res.send('<html><body><p>Welcome to sShop 0.1</p></body></html>');
+});
 app.use('/barang', require('./routes/barang'));
 app.use('/dapur', require('./routes/dapur'));
 // app.use('/departemen', require('./routes/departemen'));
